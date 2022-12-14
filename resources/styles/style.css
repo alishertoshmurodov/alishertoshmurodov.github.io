@@ -33,7 +33,7 @@ nav a {
 }
 
 .intro {
-    margin-top: 221px;
+    margin-top: 100px;
     margin-left: 80px;
 }
 
@@ -83,6 +83,7 @@ nav a {
     background-color: #275090;
     color: #ffffff;
     transition-duration: 0.15s;
+    border-color: #275090;
 }
 
 .projects-button {
@@ -95,6 +96,7 @@ nav a {
     background-color: #275090;
     color: #ffffff;
     transition-duration: 0.15s;
+    border-color: #275090;
 }
 
 
@@ -102,11 +104,11 @@ nav a {
     position: relative;
     color: #000;
     text-decoration: none;
-  }
-  
+}
+
 .nav-list a:hover {
     color: #000;
-  }
+}
 
 .nav-list a::before {
     content: "";
@@ -119,8 +121,91 @@ nav a {
     background-color: #000;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-  }
+}
 
- .nav-list a:hover::before {
+.nav-list a:hover::before {
     transform: scaleX(1);
-  }
+}
+
+.projects {
+    margin-top: 180px;
+}
+
+.projects h2 {
+    margin-left: 80px;
+    margin-bottom: 80px;
+    font-size: 50px;
+}
+
+.projects__container {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2%;
+    margin: 0 auto;
+}
+
+
+
+.projects__container__item {
+    padding: 20px;
+    margin-bottom: 500px;
+    border: 1px solid black;
+    border-radius: 29px;
+    text-align: center;
+    background: #001219;
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects__container__item img {
+    width: 100%;
+    border-radius: 10px
+}
+
+.project-info {
+    padding: 0 20px;
+    margin: 10px 0 0 0;
+}
+
+.project-info h3 {
+    font-size: 29px;
+}
+
+.project-info p {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    line-height: 24px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff;
+    margin-top: 10px;
+}
+
+.project-links a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.project-links a:hover {
+    transition-duration: 0.2s;
+    transform: scale(1.1);
+}
+
+.fa-github {
+    margin-right: 5px;
+}
+
+.fa-arrow-up-right-from-square {
+    margin-left: 5px;
+}
