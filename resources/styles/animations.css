@@ -120,6 +120,7 @@
     }
 }
 
+
 .jello-vertical:hover {
     -webkit-animation: jello-vertical 0.9s both;
     animation: jello-vertical 0.9s both;
@@ -136,6 +137,19 @@
 }
 
 .fade-in-bottom {
-	-webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.scale-up {
+    transition-duration: 0.3s;
+    transform: translateY(-20px);
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+.scale-center {
+    transition-duration: 0.2s;
+    transform: scale(1.1);
 }
