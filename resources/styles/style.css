@@ -311,6 +311,7 @@ nav a {
 @media (max-width: 425px) {
     .projects__container {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .intro {
@@ -354,4 +355,48 @@ nav a {
         justify-content: center;
     }
 
+    .projects {
+        padding-top: 30px;
+        margin-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: unset;
+        padding-bottom: 50px;
+    }
+
+    .projects h2 {
+        margin-left: 0;
+        margin-bottom: 33px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .contacts h2 {
+        margin-left: 0;
+        margin-bottom: 33px;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .contacts {
+        padding: 0 20px 50px 20px;
+        height: unset;
+    }
+
+    .contacts a {
+        font-size: 18px;
+    }
+
+    .contacts__container {
+        gap: 25px;
+    }
+
+    .socials-block {
+        min-width: unset;
+    }
+
+    .social-icons a {
+        font-size: 32px;
+    }
 }
