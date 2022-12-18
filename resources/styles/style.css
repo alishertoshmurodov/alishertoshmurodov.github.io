@@ -142,6 +142,8 @@ nav a {
     padding-top: 50px;
     padding-bottom: 150px;
     height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .projects h2 {

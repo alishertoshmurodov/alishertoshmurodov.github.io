@@ -1,12 +1,18 @@
 const projectEls = document.querySelectorAll('.projects__container__item');
 
+
 projectEls.forEach(element => {
-    element.addEventListener('mouseover', function (e) {
-        element.classList.add('scale-up');
-    });
-    element.addEventListener('mouseout', function (e) {
-        element.classList.remove('scale-up');
-    });
+    const media = window.matchMedia('(max-width: 425px)');
+    if (media.matches) {
+        removeEventListener('mouseover', projectEls.forEach);
+    } else {
+        element.addEventListener('mouseover', function (e) {
+            element.classList.add('scale-up');
+        });
+        element.addEventListener('mouseout', function (e) {
+            element.classList.remove('scale-up');
+        });
+    }
 });
 
 
@@ -20,3 +26,7 @@ contactLinkEls.forEach(element => {
         element.classList.remove('scale-center');
     });
 });
+
+
+
+
