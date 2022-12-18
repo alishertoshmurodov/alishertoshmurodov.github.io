@@ -228,6 +228,7 @@ nav a {
 .contacts {
     background: #0496FF;
     height: 100vh;
+    padding: 0 20px;
 }
 
 .contacts__container {
@@ -311,6 +312,11 @@ nav a {
 }
 
 @media (max-width: 425px) {
+    header {
+        height: unset;
+        padding-bottom: 50px;
+    }
+
     .projects__container {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -400,5 +406,16 @@ nav a {
 
     .social-icons a {
         font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects__container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .projects {
+        height: unset;
     }
 }
