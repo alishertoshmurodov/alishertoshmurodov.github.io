@@ -13,7 +13,7 @@ html {
 }
 
 header {
-    height: 100vh;
+    height: unset;
 }
 
 nav li {
@@ -141,7 +141,7 @@ nav a {
     background: #FFC100;
     padding-top: 50px;
     padding-bottom: 150px;
-    height: 100vh;
+    height: unset;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -157,6 +157,7 @@ nav a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2%;
+    row-gap: 40px;
     margin: 0 auto;
 }
 
@@ -227,7 +228,7 @@ nav a {
 
 .contacts {
     background: #0496FF;
-    height: 100vh;
+    height: unset;
     padding: 0 20px;
 }
 
